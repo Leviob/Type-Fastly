@@ -14,11 +14,11 @@ Homronyms - some homerownly spellings are the same for multiple words. I call th
 
 ## How it Works
 
-# for word in top_ten(thousand)
-# find the homerownly spelling
-# add that value to a dictionary 
-#   key is the homerownly spelling
-#   value is a list of words with that spelling (homronyms)
+First, I use `create_top_ten_thousand_list.py` to create 7 lists of the top ten thousand words of length at least 1 to 7, respectively. This will let me compare the feasibillity of this typing method by excluding shorter words. This program uses the Brown Corpus to calculate the most frequently used words. 
+
+Then, with `feasibillity_test.py`, each of these words are converted to their homerownly spellings. These spellings become the keys of a dictionary, with the values being the word or words the spelling can represent. 
+
+## Results
 
 ## Future Development 
 
