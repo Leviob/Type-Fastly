@@ -7,6 +7,12 @@ A while ago I had an idea: What if I could type using only the middle row on a k
 
 In this project I created a program which calculates what percentage of common words could not be fully defined based on home row letters alone. I also explore how increasing the length of words affects feasibility. 
 
+I'm using the Dvorak keyboard layout, which already favors the middle row a lot when typing. Here's what the layout looks like:
+
+    '  ,  .  p  y  f  g  c  r  l
+    a  o  e  u  i  d  h  t  n  s
+    ;  q  j  k  x  b  m  w  v  z
+
 ## Terminology 
 
 Homerownly - a portmanteau of 'home row', and 'only'. I use this to describe the spelling of words using only letters on the middle row of a keyboard
@@ -14,9 +20,11 @@ Homronyms - some homerownly spellings are the same for multiple words. I call th
 
 ## How it Works
 
-First, I use `create_top_ten_thousand_list.py` to create 7 lists of the top ten thousand words of length at least 1 to 7, respectively. This will let me compare the feasibillity of this typing method by excluding shorter words. This program uses the Brown Corpus to calculate the most frequently used words. 
+First, I use `create_top_ten_thousand_list.py` to create 7 lists of the top ten-thousand words of length at least 1 to 7, respectively. This will let me compare the feasibillity of this typing method by excluding shorter words. This program uses the Brown Corpus to calculate the most frequently used words. 
 
 Then, with `feasibillity_test.py`, each of these words are converted to their homerownly spellings. These spellings become the keys of a dictionary, with the values being the word or words the spelling can represent. 
+
+I ran the feasibillity test with each list of the top ten-thousand words. My prediction is that feasibility will increase drastically as the short words are removed. 
 
 ## Results
 
