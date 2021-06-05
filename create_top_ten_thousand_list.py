@@ -19,4 +19,4 @@ for i in range(7):
             top_ten.append(word)
 
     fileObj = open(f'top_ten_{i + 1}_or_longer.py', 'w')
-    fileObj.write('top_ten = ' + pprint.pformat(top_ten) + '\n')
+    fileObj.write(f'top_ten_{i + 1}_or_longer = ' + pprint.pformat(top_ten) + '\n')
