@@ -1,4 +1,4 @@
-from top_ten_3_or_longer import top_ten
+from top_ten_1_or_longer import top_ten
 # print(len(top_ten))
 homronyms = {}
 
