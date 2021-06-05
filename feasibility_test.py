@@ -1,5 +1,5 @@
-from top_ten_5_or_longer import top_ten
-print(len(top_ten))
+from top_ten_1_or_longer import top_ten
+# print(len(top_ten))
 homronyms = {}
 
 def main():
@@ -14,10 +14,12 @@ def test_feasibility():
     for k, v in homronyms.items():
         if len(v) > 1:
             duplicates += 1
-            print(f'{k}, {v}')
+            # print all homronyms
+            # print(f'{k}, {v}')
 
-    print(f'Results: {duplicates} duplicate(s) out of the top 10,000 words')
-    print(f'{(1-(duplicates/10000))*100}%')
+    print(f'Results: {duplicates} duplicate(s) out of the top 10,000 \
+words of length {min(len(x) for x in top_ten)}.')
+    print(f'{(1-(duplicates/10000))*100}% unique.')
 
 def spell_using_home_row(word): 
     home_row_letters = {'q': 'o',
